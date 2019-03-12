@@ -43,7 +43,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
@@ -51,6 +52,7 @@ body {
     text-transform: uppercase;
     
     backface-visibility: hidden; /*fixes the shaking in the animation.*/
+    margin-bottom: 60px;
 }
 .heading-primary-main {
     display: block;
@@ -104,4 +106,29 @@ body {
     100% {
         transform: translateX(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(25, 43, 29, 0.253);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(25, 43, 29, 0.253);
+}
+
+.btn-white {
+    background-color: #FFF;
+    color: #777;
 }
